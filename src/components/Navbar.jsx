@@ -13,7 +13,7 @@ export default function Navbar() {
     <>
 
       <header>
-        <nav className="flex justify-between items-center w-[92%] bg-slate-100 mx-auto md:h-[80]">
+        <nav className="flex justify-between sticky-top items-center w-[92%] bg-slate-100 mx-auto md:h-[80]">
           <div>
             <Image
               src={logoImage}
