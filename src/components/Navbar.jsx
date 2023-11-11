@@ -19,7 +19,7 @@ export default function Navbar() {
               className="w-[50%]"
             />
           </div>
-          <div className="md:static absolute bg-slate-100 min-h-[5vh] left-0 top-[-100%] md:w-auto w-[100%] flex items-center px-5">
+          <div className="md:static absolute bg-slate-100 min-h-[5vh] left-0 top-[-150%] md:w-auto w-[100%] flex items-center px-5">
             <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-2 font-bold text-[#F29640]">
               <li>
                 <Link className="hover:text-[#54AEF4]" href="./">
