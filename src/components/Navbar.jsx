@@ -37,7 +37,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-[#54AEF4]" href="./ubicanos">
+                <Link className="hover:text-[#54AEF4]" href="./servicios">
                   Servicios
                 </Link>
               </li>
