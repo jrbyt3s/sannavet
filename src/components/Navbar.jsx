@@ -36,6 +36,11 @@ export default function Navbar() {
                   Ubicanos
                 </Link>
               </li>
+              <li>
+                <Link className="hover:text-[#54AEF4]" href="./ubicanos">
+                  Servicios
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="flex items-center gap-2">

@@ -8,7 +8,7 @@ import HeroImage from "public/images/sannavet-cuidamos-a-tu-mascota-1.jpg";
 
 const HeroComponent = () => {
   return (
-    <section className="flex md:flex-row flex-col justify-around items-center min-w-7xl">
+    <section className="flex md:flex-row flex-col justify-around items-center min-w-7xl mt-[60px]">
       {/* textual area */}
       <div className="flex flex-col items-start justify-start md:ml-20 mx-10 mt-10 md:mt-0">
         <p className="text-orange-500 font-semibold text-base">Veterinaria</p>

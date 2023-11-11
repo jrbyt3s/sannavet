@@ -1,7 +1,7 @@
 import React from "react";
 
 function page() {
-  return <div>ubicanos</div>;
+  return <div>servicios</div>;
 }
 
 export default page;
