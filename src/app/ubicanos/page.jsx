@@ -1,9 +1,7 @@
-const Ubicanos = () => {
-    return (
-        <>
-            <h1 className="m-11">Ubicanos page</h1>
-        </>
-    );
+import React from "react";
+
+function page() {
+  return <div>page</div>;
 }
 
-export default Ubicanos;
+export default page;
