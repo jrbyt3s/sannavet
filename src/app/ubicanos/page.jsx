@@ -20,4 +20,4 @@ const Ubicanos = () => {
     );
 }
 
-export default Ubicanos;
+export default page;
