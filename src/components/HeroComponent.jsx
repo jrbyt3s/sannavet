@@ -8,12 +8,12 @@ import HeroImage from "public/images/sannavet-cuidamos-a-tu-mascota-1.jpg";
 
 const HeroComponent = () => {
   return (
-    <section className="flex md:flex-row flex-col justify-around items-center min-w-7xl mt-[60px]">
+    <section className="flex md:flex-row flex-col justify-around items-center min-w-7xl">
       {/* textual area */}
       <div className="flex flex-col items-start justify-start md:ml-20 mx-10 mt-10 md:mt-0">
         <p className="text-orange-500 font-semibold text-base">Veterinaria</p>
         <h1 className="font-bold md:text-6xl text-5xl text-[#F1993C]">
-          <span className="text-[#022F4E]">Sannavet</span>, hacemos que tu
+          <span className="text-[#022F4E]">Sannavet</span>, hacermos que tu
           mascota mejore
         </h1>
         <p className="md:text-base text-sm font-semibold text-gray-400 mt-5">
