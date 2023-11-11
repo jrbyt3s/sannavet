@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
+    "boxicons": "^2.1.4",
     "force": "^0.0.3",
     "heroicons": "^2.0.18",
     "next": "14.0.1",
