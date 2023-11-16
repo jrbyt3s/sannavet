@@ -7,8 +7,10 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import logoImage from "public/images/sannavet-logo-brand-removebg-resize.png";
 
 export default function Navbar() {
+  // Estado para controlar si el menú móvil está abierto o cerrado
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // Función para cambiar el estado del menú móvil (abierto/cerrado)
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -16,7 +18,9 @@ export default function Navbar() {
   return (
     <>
       <header>
+        {/* Barra de navegación */}
         <nav className="flex justify-between fixed top-0 items-center w-full bg-slate-100 mx-auto h-[60px] z-50">
+          {/* Sección del logo */}
           <div>
             <Image
               src={logoImage}
@@ -27,20 +31,16 @@ export default function Navbar() {
             />
           </div>
 
+          {/* Sección del menú, se mostrará como un menú desplegable en pantallas pequeñas */}
           <div
             className={`${
               isMobileMenuOpen
-                ? "absolute top-[60px] left-0 w-full"
+                ? "absolute top-[60px]"
                 : "md:static hidden md:block"
-            } bg-slate-100 min-h-[5vh] md:w-auto w-[100%] flex items-center px-5 md:flex-row flex-col gap-2 font-bold text-[#F29640]`}
+            } bg-slate-100 min-h-[5vh] left-0 md:w-auto w-[100%] flex items-center px-5 md:flex-row flex-col gap-2 font-bold text-[#F29640]`}
           >
-            <ul
-              className={`${
-                isMobileMenuOpen
-                  ? "flex flex-col md:flex-row md:items-center md:gap-[4vw] gap-2"
-                  : "flex flex-col items-center gap-2"
-              }`}
-            >
+            {/* Lista de elementos del menú */}
+            <ul className="flex flex-col md:flex-row md:items-center md:gap-[4vw] gap-2">
               <li>
                 <Link href="/" className="hover:text-[#54AEF4]">
                   Inicio
@@ -64,7 +64,9 @@ export default function Navbar() {
             </ul>
           </div>
 
+          {/* Sección de botón de login y menú hamburguesa */}
           <div className="flex items-center gap-2">
+            {/* Botón de login */}
             <Link
               href="/login"
               className="block bg-orange-500 px-5 py-2 m-2 text-white font-semibold rounded-2xl hover:bg-[#54AEF4]"
@@ -72,10 +74,12 @@ export default function Navbar() {
               Login
             </Link>
 
+            {/* Botón del menú hamburguesa visible solo en pantallas pequeñas */}
             <button
               onClick={toggleMobileMenu}
               className="block w-6 h-6 mx-2 md:hidden focus:outline-none"
             >
+              {/* Ícono del menú hamburguesa o de cierre dependiendo del estado */}
               {isMobileMenuOpen ? (
                 <AiFillCloseCircle className="w-6 h-6" />
               ) : (
