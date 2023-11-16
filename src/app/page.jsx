@@ -18,9 +18,9 @@ function About() {
 
   return (
     <>
-      <div className="flex justify-between min-w-7xl my-24 md:flex-row flex-col gap-y-10">
+      <section className="flex justify-between min-w-7xl my-24 md:flex-row flex-col gap-y-10">
         <div className="mx-20">
-          <Image src={imagecar} width={1500} height={1500} objectFit="cover" />
+          <Image src={imagecar} width={1500} height={1500} objectFit="cover" alt="Sannavet-Groomers-profesionales"/>
         </div>
         <div className="md:mr-20 mx-10 md:order-2 order-1">
           <h2 className="text-base text-orange-500 font-semibold">
@@ -51,7 +51,8 @@ function About() {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
+      <PriceSection/>
     </>
   );
 }
