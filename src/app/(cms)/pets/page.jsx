@@ -1,15 +1,15 @@
 import React from 'react'
 
 
-const Dasboard = () => {
+const Pets = () => {
     
     return (
 
         <>
-        <h1>Dashboard</h1>
+        <h1>Pets</h1>
         </>
 
     );
 }
 
-export default Dasboard;
+export default Pets;
