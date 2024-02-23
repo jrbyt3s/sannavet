@@ -9,7 +9,7 @@ const Signinbasic = () => {
 
   return (
    <Fragment>
-    <Seo title={"Signin-basic"}/>
+    {/* <Seo title={"Signin-basic"}/> */}
     <div className="container">
         <div className="flex justify-center authentication authentication-basic items-center h-full text-defaultsize text-defaulttextcolor">
           <div className="grid grid-cols-12">
