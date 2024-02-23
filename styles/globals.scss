@@ -1,0 +1,93 @@
+//Remix Icons
+@font-face {
+  font-family: "remixicon";
+  src: url("../public/assets/iconfonts/RemixIcons/fonts/remixicon.eot");
+  src: url("../public/assets/iconfonts/RemixIcons/fonts/remixicon.eot") format("embedded-opentype"),
+    url("../public/assets/iconfonts/RemixIcons/fonts/remixicon.woff2") format("woff2"),
+    url("../public/assets/iconfonts/RemixIcons/fonts/remixicon.woff") format("woff"),
+    url("../public/assets/iconfonts/RemixIcons/fonts/remixicon.ttf") format("truetype"),
+    url("../public/assets/iconfonts/RemixIcons/fonts/remixicon.svg") format("svg");
+  /* iOS 4.1- */
+  font-display: swap;
+}
+
+//Boxicons
+@font-face {
+  font-family: 'boxicons';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../public/assets/iconfonts/boxicons/fonts/boxicons.eot');
+  src: url('../public/assets/iconfonts/boxicons/fonts/boxicons.eot') format('embedded-opentype'),
+    url('../public/assets/iconfonts/boxicons/fonts/boxicons.woff2') format('woff2'),
+    url('../public/assets/iconfonts/boxicons/fonts/boxicons.woff') format('woff'),
+    url('../public/assets/iconfonts/boxicons/fonts/boxicons.ttf') format('truetype'),
+    url('../public/assets/iconfonts/boxicons/fonts/boxicons.svg') format('svg');
+}
+
+//tabler-icons
+@font-face {
+  font-family: "tabler-icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/assets/iconfonts/tabler-icons/iconfont/fonts/tabler-icons.eot");
+  src: url("../public/assets/iconfonts/tabler-icons/iconfont/fonts/tabler-icons.eot?#iefix") format("embedded-opentype"),
+    url("../public/assets/iconfonts/tabler-icons/iconfont/fonts/tabler-icons.woff2") format("woff2"),
+    url("../public/assets/iconfonts/tabler-icons/iconfont/fonts/tabler-icons.woff") format("woff"),
+    url("../public/assets/iconfonts/tabler-icons/iconfont/fonts/tabler-icons.ttf") format("truetype"),
+    url("../public/assets/iconfonts/tabler-icons/iconfont/fonts/tabler-icons.svg") format("svg");
+}
+//bootstrap-Icons
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("../public/assets/iconfonts/bootstrap-icons/icons/font/fonts/bootstrap-icons.woff2?08efbba7c53d8c5413793eecb19b20bb") format("woff2"),
+    url("../public/assets/iconfonts/bootstrap-icons/icons/font/fonts/bootstrap-icons.woff?08efbba7c53d8c5413793eecb19b20bb") format("woff");
+}
+
+//feather-icons
+@font-face {
+  font-family: "feather";
+  src: url("../public/assets/iconfonts/feather/fonts/feather/feather-webfont.eot?t=1501841394106");
+  src: url("../public/assets/iconfonts/feather/fonts/feather/feather-webfont.eot?t=1501841394106") format("embedded-opentype"),
+    url("../public/assets/iconfonts/feather/fonts/feather/feather-webfont.ttf") format("truetype"),
+    url("../public/assets/iconfonts/feather/fonts/feather/feather-webfont.svg") format("svg");
+}
+
+@import "../public/assets/iconfonts/RemixIcons/fonts/remixicon.css";
+@import "../public/assets/iconfonts/boxicons/css/boxicons.css";
+@import "../public/assets/iconfonts/tabler-icons/iconfont/tabler-icons.css";
+@import "../public/assets/iconfonts/bootstrap-icons/icons/font/bootstrap-icons.css";
+@import "../public/assets/iconfonts/feather/feather.css";
+@import "../public/assets/iconfonts/line-awesome/1.3.0/scss/line-awesome.scss";
+
+@import "../public/assets/css/style.css";
+
+
+//Packages css
+@import "filepond/dist/filepond.min.css"; //file pond css
+@import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"; //dependencies plugin css for react file pond package
+@import 'react-perfect-scrollbar/dist/css/styles.css'; //(perfectscrollbar)
+@import "react-datepicker/dist/react-datepicker.css"; //(datepicker)
+
+@import 'react-range-slider-input/dist/style.css'; //(rangeslider)
+@import "react-dropzone-uploader/dist/styles.css"; //react dropzone uploader
+@import 'react-quill/dist/quill.snow.css'; //  (Quill styles)
+@import "gridjs/dist/theme/mermaid.css"; // (Grid css)
+@import 'react-range-slider-input/dist/style.css';
+@import "react-calendar/dist/Calendar.css"; //  react Calendar
+
+//(Swiper Js CSS)
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
+@import 'swiper/css/effect-coverflow';
+@import 'swiper/css/thumbs';
+@import 'swiper/css/effect-flip';
+@import 'swiper/css/effect-fade';
+@import 'swiper/css/effect-cube';
+@import "swiper/css/effect-cards"; // swiper effect-cards
+@import "swiper/css/zoom"; //Swipper Zoom css
+@import 'swiper/css/scrollbar';
+@import 'swiper/css/free-mode';
+@import 'react-tabulator/lib/styles.css'; // (required styles)
+@import 'react-tabulator/lib/css/tabulator.min.css'; // (theme)
+

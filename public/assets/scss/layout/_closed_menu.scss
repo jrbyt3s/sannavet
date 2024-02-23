@@ -1,0 +1,33 @@
+[data-vertical-style="closed"] {
+    &[data-toggled="close-menu-close"] {
+        .app-sidebar {
+          @apply hidden;
+        }
+        @media (min-width: 992px) {
+            .content  {
+                @apply ms-0;
+                
+            }
+            .app-header {
+                @apply ps-0 #{!important};
+            
+            }
+        }    
+    }    
+    &[data-toggled="close-menu-open"] {
+        .app-sidebar {
+            @apply block;
+            
+        }
+        @media (min-width: 992px) {
+            .content  {
+                @apply ms-60;
+            
+            }
+            .app-header {
+                @apply ps-60;
+                
+            }
+        }    
+    }    
+}

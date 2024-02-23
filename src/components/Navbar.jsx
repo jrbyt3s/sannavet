@@ -3,8 +3,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiFillCloseCircle } from "react-icons/ai";
-import logoImage from "public/images/sannavet-logo-brand-removebg-resize.png";
+
+import logoImage from "../../public/images/sannavet-logo-brand-removebg-resize.png";
 
 export default function Navbar() {
   // Estado para controlar si el menú móvil está abierto o cerrado

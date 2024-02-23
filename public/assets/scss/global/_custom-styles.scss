@@ -1,0 +1,575 @@
+.ps__thumb-y {
+  @apply bg-[#f3f6f8];
+}
+.ps__rail-y:hover>.ps__thumb-y {
+  @apply bg-[#f3f6f8];
+}
+//Range Slider
+.range-slider__thumb {
+  @apply left-[calc(50%+0px)] #{!important};
+}
+.range-slider__range {
+  @apply left-0 w-[50%] #{!important};
+}
+.MuiSlider-root.MuiSlider-colorPrimary {
+  @apply text-[#845adf];
+}
+.range-slider .range-slider__thumb {
+  @apply bg-[#845adf];
+}
+.range-slider .range-slider__range {
+  @apply bg-[#845adf];
+}
+.square-thumb.range-slider .range-slider__thumb {
+  @apply rounded-[5px];
+}
+.single-thumb .range-slider__range {
+  @apply rounded-[6px];
+}
+//Dropzone
+.dzu-inputLabel {
+  @apply text-[#536485] bg-[#f6f6f6];
+}
+//datatable
+.table-bordered {
+  @apply w-full #{!important};
+}
+//modal Search
+#search-modal {
+  .hidden {
+    display: none;
+  }
+}
+#search-modal {
+  .ti-modal-body {
+    .box-body {
+      .ti-list-group {
+        @apply p-3 rounded-none border-b-0;
+
+        &:first-child {
+          @apply p-3 rounded-tl-sm rounded-tr-sm border-b-0 #{!important};
+        }
+      }
+    }
+  }
+}
+
+[data-width="boxed"] {
+  .content {
+    @apply dark:bg-bodybg2 #{!important};
+  }
+}
+
+[data-width="boxed"] {
+  body {
+    @apply dark:bg-bodybg/60 #{!important};
+  }
+}
+
+.box-fullscreen {
+  .terms-heading-cover {
+    @apply rounded-none #{!important};
+  }
+}
+
+.rmsc .dropdown-container {
+  @apply flex items-center border border-defaultborder dark:border-defaultborder/10 h-[38px] #{!important};
+}
+
+[dir=rtl] {
+  .rmsc .item-renderer input {
+    @apply me-2 mt-0 mb-0 ms-0 #{!important};
+  }
+}
+
+@media (max-width: 575px) {
+  .overlay-card .card-text {
+    @apply text-[0.613rem] #{!important};
+  }
+}
+
+.react-select__menu {
+  @apply bg-white dark:bg-bodybg border border-defaultborder dark:border-defaultborder/10 #{!important};
+
+  ul,
+  div {
+    @apply bg-white dark:bg-bodybg text-defaulttextcolor  dark:text-defaulttextcolor/80 #{!important};
+
+    .react-select__option--is-focused {
+      @apply bg-primary text-white #{!important};
+    }
+  }
+}
+
+.react-select__option--is-focused {
+  @apply bg-primary text-white #{!important};
+}
+
+#secondary-colored-slider {
+  .css-1diafny-MuiSlider-root {
+    @apply text-secondary #{!important};
+  }
+}
+
+#warning-colored-slider {
+  .MuiSlider-root {
+    @apply text-warning #{!important};
+  }
+}
+
+#info-colored-slider {
+  le .MuiSlider-root {
+    @apply text-info #{!important};
+  }
+}
+
+#success-colored-slider {
+  .MuiSlider-root {
+    @apply text-success #{!important};
+  }
+}
+
+#danger-colored-slider {
+  .MuiSlider-root {
+    @apply text-danger #{!important};
+  }
+}
+
+.dzu-dropzone {
+  @apply border-0 #{!important};
+}
+@media (min-width: 621px) {
+  .css-13cymwt-control {
+    @apply rounded-none #{!important};
+  }
+
+  .companies-search-input {
+    .rmsc {
+      .dropdown-container {
+        @apply rounded-none #{!important};
+      }
+    }
+  }
+}
+
+#btc-chart,
+#eth-chart,
+#glm-chart,
+#dash-chart,
+#lite-chart,
+#ripple-chart,
+#eos-chart,
+#bytecoin-chart,
+#iota-chart,
+#monero-chart {
+
+  .apexcharts-canvas,
+  .apexcharts-svg {
+    @apply w-[120px] #{!important};
+  }
+}
+
+[data-nav-layout="horizontal"][data-menu-styles="light"] {
+
+  .main-menu-container .slide-right,
+  .slide-left {
+    @apply bg-[#fff] dark:bg-bodybg2 border-defaultborder #{!important};
+
+    svg {
+      @apply fill-[#536485] dark:fill-defaulttextcolor/10 #{!important};
+    }
+  }
+}
+
+@media (min-width:992px) {
+  [data-nav-layout="horizontal"] {
+    .footer {
+      @apply ps-0 #{!important};
+    }
+  }
+}
+#projectAnalysis,
+#btc-chart,
+#eth-chart ,
+#dash-chart {
+  .apexcharts-tooltip-title {
+    @apply border-b-[$default-border] border-0 border-b border-solid #{!important};
+  }
+}
+
+@media (min-width:992px) {
+  [data-nav-layout="horizontal"][data-nav-style="menu-hover"][data-toggled="menu-hover-closed"] {
+    .app-sidebar .slide.has-sub .slide-menu.child1 {
+      @apply start-auto #{!important};
+    }
+  }
+}
+.react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus {
+  @apply text-defaulttextcolor dark:text-defaulttextcolor/70;
+}
+
+.product-checkout nav .btn.active {
+  @apply text-primary #{!important};
+}
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-sorter{
+  @apply rtl:left-1 rtl:right-auto #{!important};
+}
+
+#visitors-countries{
+  svg{
+    @apply w-full #{!important};
+  }
+}
+.react-select__indicators {
+  span {
+    @apply w-0 #{!important};
+  }
+}
+
+.ps__thumb-y {
+  // background-color: ;
+  @apply bg-gray-200 #{!important};
+}
+
+code[class*="language-"] {
+  @apply max-h-[inherit] h-[inherit] block overflow-auto px-[1em] py-0;
+}
+pre[class*="language-"] > code {
+  @apply relative z-[1] shadow-[-1px_0_0_0_#358ccb,0_0_0_1px_#dfdfdf] bg-[#fdfdfd] bg-[linear-gradient(transparent_50%,rgba(69,142,209,0.04)_50%)] bg-[3em_3em] bg-origin-content bg-local border-l-[10px] border-l-[#358ccb] border-solid;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  @apply text-black text-[1em] text-left whitespace-pre break-normal leading-normal bg-transparent  hyphens-none; 
+}
+
+#SvgjsLine4971 {
+  @apply hidden;
+}
+.Select2__placeholder {
+  @apply opacity-40;
+}
+
+.swiper-view .swiper-slide {
+  @apply border border-[rgb(var(--default-border))] bg-[rgb(255_255_255_/_var(--tw-bg-opacity))] rounded-lg border-solid mt-[15px] #{!important};
+}
+
+.swiper-view .swiper-slide {
+  @apply dark:bg-bodybg border-defaultborder dark:border-defaultborder/70 #{!important};
+}
+
+.h5 {
+  @apply text-xl;
+}
+.h6 {
+  @apply text-base;
+}
+
+#profile-posts-scroll,
+#full-calendar-activity {
+  @apply overflow-y-auto;
+}
+
+#profile-posts-scroll {
+  @apply max-h-[35rem];
+}
+
+.h3 {
+  @apply text-[1.75rem]
+}
+
+.ti-btn-group {
+  .ti-dropdown {
+    @apply me-2;
+  }
+}
+
+.total-mail-recepients {
+  @apply flex-col;
+}
+
+//switcher primary color picker
+.color-picker-input {
+  input {
+    @apply w-8 h-8 rounded-[0.5rem] cursor-pointer relative;
+
+    &::before {
+      @apply content-["\efc3"] font-['remixicon'] text-[1.2rem] text-white/70 leading-loose absolute z-30 top-[-3px] left-[7px] #{!important};
+    }
+  }
+
+  input[type="color" i]::-webkit-color-swatch {
+    @apply border border-primary bg-primary rounded-[50%] #{!important};
+  }
+
+  input[type="color" i]::-webkit-color-swatch-wrapper {
+    @apply p-0 absolute top-0;
+  }
+}
+
+.scrollbar-container {
+  @apply relative h-full;
+}
+.max-h-\[28\.375rem\] {
+  @apply max-h-[29.375rem] #{!important};
+}
+
+.table-responsive,
+.table {
+  @apply overflow-y-visible #{!important};
+}
+.rmsc .dropdown-container {
+  @apply border-defaultborder dark:border-defaultborder/10 #{!important};
+}
+// .apexcharts-canvas,
+.apexcharts-svg {
+  @apply w-full #{!important};
+}
+
+.color-picker-input input {
+  @apply rounded-full #{!important};
+}
+
+.ti-main-tooltip-content {
+  @apply border #{!important};
+}
+
+.css-13cymwt-control {
+  @apply shadow-none #{!important};
+}
+
+.css-t3ipsp-control {
+  @apply shadow-none #{!important};
+}
+
+.danger-input {
+  .css-13cymwt-control {
+    @apply border-danger #{!important};
+  }
+}
+
+.success-input {
+  .css-13cymwt-control {
+    @apply border-success #{!important};
+  }
+}
+
+@media (max-width: 575px) {
+  .box-img-overlay .box-text {
+    @apply text-[0.613rem] #{!important};
+  }
+}
+
+.ti-offcanvas-title {
+  @apply text-[1rem] font-medium #{!important};
+}
+
+#stars-unlimited {
+  @apply overflow-hidden #{!important};
+}
+
+[data-nav-layout=vertical] {
+  .app-sidebar .side-menu__item.active{
+    @apply my-[0.188rem] #{!important};
+  }
+}
+.selectpage{
+  @apply rounded-sm bg-white dark:bg-bodybg border-defaultborder dark:border-defaultborder/10 #{!important};
+}
+.btn-outline-light{
+  @apply px-3 py-2 border rounded-sm border-defaultborder dark:border-defaultborder/10 #{!important};
+}
+@media (max-width: 575px) {
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-right, .apexcharts-legend.apx-legend-position-top.apexcharts-align-right {
+  @apply top-[21px] #{!important};
+}
+}
+#chart-year{
+  .flat-select{
+    @apply hidden;
+  }
+}
+.under-maintenance-time {
+  @apply border-2 border-dashed border-black/10 dark:border-white/10 rounded-md #{!important};
+}
+.aunthentication-cover-content{
+  .swiper-pagination-bullet{
+  @apply dark:bg-white/30 #{!important};
+  }
+  .swiper-pagination-bullet-active {
+    @apply dark:bg-white #{!important};
+  }
+}
+.btn-check+.btn.btn-outline-primary:hover, .btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
+  @apply text-white bg-primary border-primary #{!important};
+}
+#reactivity-table{
+  td{
+  @apply text-start #{!important};
+  }
+}
+
+.validation-statedata .react-select__indicator {
+  @apply p-0.5;
+}
+
+[dir="rtl"] {
+  .swiper {
+    direction: ltr !important;
+  }
+  .swiper-backface-hidden .swiper-slide {
+    direction: rtl !important;
+  }
+}
+#crm-main .apexcharts-canvas,
+#crm-main .apexcharts-svg {
+  @apply w-auto #{!important}; 
+}
+[data-hs-tab].active.hs-tab-active\:bg-success\/20 {
+  @apply bg-success/20 #{!important};
+}
+.range-slider .range-slider__thumb,
+.range-slider .range-slider__range {
+  @apply bg-[#7950d1] #{!important};
+}
+#top-collector ::-webkit-scrollbar {
+  @apply w-0 #{!important};
+}
+
+
+.box.custom-box .box-header .box-title .subtitle {
+  @apply normal-case mb-0;
+}
+
+.fs-12 {
+  @apply text-xs;
+}
+
+@media (min-width: 1400px) {
+  [data-width=boxed] {
+    .xxxl\:col-span-3,.xxxl\:col-span-4,.xxxl\:col-span-6,.xxxl\:col-span-8 {
+      @apply col-span-12 #{!important};
+    }
+  }
+}
+@media (max-width: 460px) {
+  .main-header-container .header-content-right .ti-dropdown-menu{
+    @apply w-full #{!important};
+  }
+}
+h3 {
+  font-size: 1.75rem;
+}
+.react-calendar {
+  @apply dark:bg-bodybg  border-defaultborder dark:border-defaultborder/70 #{!important};
+}
+.react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus,
+.react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus{
+  @apply bg-bodybg dark:bg-bodybg2 rounded-md #{!important};
+}
+
+.react-calendar__tile--active{
+  @apply rounded-md bg-primary #{!important};
+}
+.dzu-inputLabel{
+  @apply text-defaulttextcolor dark:text-defaulttextcolor/70  #{!important};
+}
+.end-2 {
+  @apply right-2.5 rtl:left-2.5 ;
+}
+
+[type=checkbox].ti-switch:focus{
+  @apply dark:border-defaultborder/20 #{!important};
+}
+
+
+.ps__rail-y:hover > .ps__thumb-y,.ps .ps__rail-y:hover,.ps__thumb-y {
+  @apply  dark:bg-bodybg2 #{!important}; 
+}
+.dzu-inputLabel {
+  @apply  dark:bg-bodybg2 #{!important}; 
+}
+.dzu-dropzone {
+  @apply dark:border-defaultborder/20;
+}
+.main-chat-area .scrollbar-container{
+  height: calc(100vh - 19rem) !important;
+}
+select{
+  @apply  dark:bg-bodybg2;
+}
+.ti-main-tooltip .ti-main-tooltip-toggle.hs-tooltip-toggle {
+  @apply flex #{!important};
+}
+input.gridjs-input{
+  @apply dark:border-defaultborder/20 #{!important};
+}
+.app-sidebar .simplebar-wrapper{
+  @apply h-full;
+}
+.app-sidebar .simplebar-placeholder {
+  @apply h-[100px] #{!important};
+}
+.ti-btn-outline-light:hover{
+  @apply dark:border-defaultborder/20 #{!important};
+}
+.ti-pagination li .page-link:hover{
+  @apply dark:border-defaultborder/20 #{!important};
+}
+
+.react-select__input-container{
+  @apply  dark:text-defaulttextcolor/70  #{!important};
+}
+[dir="rtl"] .form-select {
+  @apply bg-[left_0.5rem_center];
+}
+.hs-dropdown.ti-dropdown:focus-visible  {
+  @apply outline-none  #{!important};
+}
+.tabulator .tabulator-header .tabulator-header-contents {
+  @apply relative overflow-hidden;
+}
+th.gridjs-th {
+  @apply w-[200px];
+}
+
+.react-select__single-value {
+  @apply dark:text-defaulttextcolor/70 #{!important};
+}
+
+.rmsc .dropdown-container {
+  @apply dark:bg-bodybg #{!important};
+}
+
+.search-company .Select2__control {
+  @apply min-h-[40px] border-e-0;
+}
+@media (max-width: 991.98px) {
+  .mail-navigation {
+    @apply hidden;
+  }
+}
+.square-thumb .MuiSlider-thumb {
+  @apply rounded-[5px];
+}
+.avatar-img {
+  @apply rounded-none;
+}
+.bg-pink-transparent {
+  @apply bg-[rgba(var(--pink),0.10)];
+}
+
+::-webkit-scrollbar {
+  @apply h-[5px] w-0.5 bg-transparent #{!important};
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[rgb(var(--light))] #{!important};
+}
+
+.profile-data {
+  cursor: pointer;
+}
+
+
+
+
