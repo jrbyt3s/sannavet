@@ -67,7 +67,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             {/* Botón de login */}
             <Link
-              href="/login"
+              href="/signin"
               className="block bg-orange-500 px-5 py-2 m-2 text-white font-semibold rounded-2xl hover:bg-[#54AEF4]"
             >
               Login

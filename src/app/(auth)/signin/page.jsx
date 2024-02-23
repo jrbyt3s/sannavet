@@ -21,7 +21,7 @@ const LoginForm = () => {
             <FaUser className="mr-2" />
             <input
               type="text"
-              placeholder="Usuario"
+              placeholder="Nombre de Usuario"
               className="border-2 border-gray-300 p-2 rounded-md"
             />
           </div>
