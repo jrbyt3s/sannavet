@@ -1,5 +1,7 @@
-'use client'
-import React, { Component } from 'react';
+
+import React from 'react';
+import Link from "next/link";
+import Image from "next/image";
 import {FcBullish} from 'react-icons/fc';
 import { HiOutlineLogout } from 'react-icons/hi'
 import classNames from 'classnames'
@@ -10,45 +12,27 @@ import {
 	HiOutlineQuestionMarkCircle,
 	HiOutlineCog
 } from 'react-icons/hi'
-import Link from 'next/link';
+
 
 const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'dashboard',
 		label: 'Dashboard',
-		path: '/',
+		path: '/dashboard',
 		icon: <HiOutlineViewGrid />
 	},
 	{
-		key: 'products',
-		label: 'Products',
-		path: '/products',
-		icon: <HiOutlineCube />
-	},
-	{
-		key: 'orders',
-		label: 'Orders',
-		path: '/orders',
-		icon: <HiOutlineShoppingCart />
-	},
-	{
-		key: 'customers',
-		label: 'Customers',
-		path: '/customers',
+		key: 'citas',
+		label: 'Citas',
+		path: '/appoiment',
 		icon: <HiOutlineUsers />
 	},
 	{
-		key: 'transactions',
-		label: 'Transactions',
-		path: '/transactions',
+		key: 'mascotas',
+		label: 'Mascotas',
+		path: '/pets',
 		icon: <HiOutlineDocumentText />
 	},
-	{
-		key: 'messages',
-		label: 'Messages',
-		path: '/messages',
-		icon: <HiOutlineAnnotation/>
-	}
 ]
 
 const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
@@ -79,9 +63,9 @@ export default function Sidebarr() {
 				<span className="text-neutral-200 text-lg">Sanavet</span>
 			</div>
 			<div className="py-8 flex flex-1 flex-col gap-0.5">
-				{DASHBOARD_SIDEBAR_LINKS.map((link) => (
+				{DASHBOARD_SIDEBAR_LINKS.map((sidebarItem) => (
 					// <SidebarLink key={link.key} link={link} />
-                    <li>hola que tal</li>
+                    <Link href={sidebarItem.path}>{sidebarItem.label}</Link>
 				))}
 			</div>
 			<div className="flex flex-col gap-0.5 pt-2 border-t border-neutral-700">
