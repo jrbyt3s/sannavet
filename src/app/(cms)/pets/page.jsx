@@ -14,6 +14,7 @@ function Page() {
             'Content-Type': 'application/json'
           }
         });
+        
         if (!response.ok) {
           throw new Error('Error al obtener los datos');
         }
@@ -24,7 +25,10 @@ function Page() {
         console.error('Error:', error);
       }
     };
+    print(localStorage.getItem('access_token'))
+    
     fetchData();
+
   }, []);
 
   return (
