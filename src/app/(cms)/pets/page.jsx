@@ -1,34 +1,3 @@
-// 'use client'
-
-// import React, { useState, useEffect } from 'react';
-// import Pets from './pets'
-
-// function page() {
-//   const [data, setData] = useState([]);
-  
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       const response = await fetch('https://sannavet-api.onrender.com/pets/');
-//       const data = await response.json();
-      
-//       setData(data);
-//       console.log(data);
-//     };
-//     fetchData();
-
-    
-//   }, []);
-
-//   return (
-//     <div>
-//       <ul>
-//         <Pets data={data.results}/>
-//       </ul>
-//     </div>
-//   );
-// }
-
-// export default page;
 'use client'
 import React, { useState, useEffect } from 'react';
 import Pets from './pets';

@@ -34,7 +34,7 @@ const Pets = ({ data }) => {
                     height={256}
                     className="object-cover w-full h-64 rounded-md"
                   />
-                  <p className="mb-2 text-gray-200 text-semibold">Sexo: {sexo}</p>
+                  <p className="mb-2 text-gray-200 text-bold">Sexo: {sexo}</p>
                   <p className="mb-4 text-gray-200 text-semibold">
                     Especie: {especie} 
                   </p>
@@ -43,7 +43,7 @@ const Pets = ({ data }) => {
                   <p className="mb-4 text-gray-200 text-semibold">Esterilizado: {esterilizado}</p>
                   <p className="mb-4 text-gray-200 text-semibold">Peso: {peso}</p>
                   <button className="justify-center px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
-                    <a href='../appoiment/appoiment.jsx'>CITAS</a>
+                    <a href="../appoiment">CITAS</a>
                   </button>
                 </div>
               </div>
