@@ -4,9 +4,9 @@ import { FaTiktok } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { BsMailbox } from "react-icons/bs";
 import Image from "next/image";
-import logoImage from "public/images/sannavet-logo-brand-removebg-resize.png";
+import logoImage from "../../public/images/sannavet-logo-brand-removebg-resize.png";
 
-const footer = () => {
+const Footer = () => {
   return (
     <>
       <div className="bg-[#F1993C] h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-10">
@@ -96,4 +96,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hero1 from "public/images/sannavet-cuidamos-a-tu-mascota-1.jpg"
+import hero1 from "../../public/images/sannavet-cuidamos-a-tu-mascota-1.jpg"
 
 const Hero = () => {
     return (

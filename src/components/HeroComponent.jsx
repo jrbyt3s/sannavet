@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { AiOutlineWhatsApp } from "react-icons/ai";
-import HeroImage from "public/images/sannavet-cuidamos-a-tu-mascota-1.jpg";
+import HeroImage from "../../public/images/sannavet-cuidamos-a-tu-mascota-1.jpg";
 
 const HeroComponent = () => {
   return (

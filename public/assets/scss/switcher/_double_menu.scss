@@ -1,0 +1,206 @@
+/* Start Double-Menu Styles */
+[data-vertical-style="doublemenu"] {
+  @media screen and (min-width: 992px) {
+    .app-sidebar {
+      .slide {
+        &.has-sub {
+          @apply grid;
+        }
+      }
+      .main-sidebar {
+        @apply overflow-visible h-[90%];
+      }
+
+      .main-sidebar-header {
+        @apply w-20 backdrop-blur-3xl;
+      }
+      .main-sidebar {
+        @apply w-[4.95rem];
+      }
+      .side-menu__icon {
+        @apply mx-auto;
+      }
+
+      .slide {
+        @apply p-0;
+      }
+
+      .slide-menu {
+        &.child1 {
+          @apply w-[12rem];
+        }
+        &.child2,
+        &.child3 {
+          @apply w-full;
+        }
+        &.child1,
+        &.child2,
+        &.child3 {
+          @apply mt-0 #{!important};
+          .slide {
+            .side-menu__item {
+              @apply text-start flex;
+
+              &:before {
+                @apply top-[0.938rem];
+              }
+            }
+          }
+
+          .side-menu__angle {
+            @apply block  top-[0.65rem];
+          }
+        }
+      }
+
+      .slide__category,
+      .side-menu__angle {
+        @apply hidden;
+      }
+
+      .side-menu__label {
+        @apply hidden;
+      }
+
+      .slide.has-sub .slide-menu.child1 {
+        @apply absolute  transition-none h-full top-0 overflow-y-auto overflow-x-hidden  #{!important};
+        .slide {
+          @apply px-0;
+        }
+      }
+
+      .simplebar-content-wrapper {
+        position: initial;
+      }
+
+      .simplebar-mask {
+        position: inherit;
+      }
+    }
+    .main-menu {
+      @apply px-0;
+    }
+    #sidebar-scroll {
+      @apply overflow-y-visible  mt-0;
+      .main-menu-container {
+        @apply mt-[4.45rem] overflow-y-scroll h-screen;
+      }
+      @apply h-full #{!important};
+    }
+    .app-sidebar {
+      @apply w-20 #{!important};
+      .main-sidebar {
+        @apply w-20 #{!important};
+      }
+      .slide.has-sub .slide-menu {
+        @apply py-0;
+      }
+      .main-sidebar-header {
+        .header-logo {
+          .desktop-logo,
+          .desktop-dark,
+          .desktop-white {
+            @apply hidden #{!important};
+          }
+          .toggle-logo {
+            @apply block;
+          }
+          .toggle-dark,.toggle-white {
+            @apply hidden;
+          }
+        }
+      }
+    }
+    .side-menu__label1 {
+      @apply block text-base font-semibold text-white border-b border-b-white/10 py-6 px-4 #{!important};
+    }
+    &.dark {
+      .slide-menu.child1 {
+        @apply border-white/10 #{!important};
+      }
+      .side-menu__label1 {
+        @apply border-white/10 text-white #{!important};
+      }
+      .app-sidebar {
+        .slide.has-sub .slide-menu {
+          @apply bg-bodybg rounded-none #{!important};
+        }
+        .main-sidebar-header {
+          .header-logo {
+            .toggle-logo,.toggle-white {
+              @apply hidden;
+            }
+            .toggle-dark {
+              @apply block;
+            }
+          }
+        }
+      }
+    }
+    .double-menu-active {
+      @apply block #{!important};
+    }
+    &[data-toggled="double-menu-close"] {
+      .slide.has-sub .slide-menu.child1 {
+        @apply hidden #{!important};
+      }
+      .double-menu-active {
+        @apply block #{!important};
+      }
+    }
+    .app-sidebar {
+      .slide-menu {
+        &.child1 {
+          @apply border-s border-s-white/10 #{!important};
+          .slide {
+            @apply start-0;
+
+            .side-menu__item {
+              @apply ps-8 pe-4;
+
+              &:before {
+                @apply start-3;
+              }
+            }
+          }
+
+          .side-menu__angle {
+            @apply end-4;
+          }
+        }
+      }
+
+      .slide.has-sub .slide-menu {
+        @apply start-[5rem]  rounded-none #{!important};
+
+        &.child2,
+        &.child3 {
+          @apply -ms-[5rem] px-0 #{!important};
+        }
+      }
+    }
+    .content {
+      @apply ms-20;
+    }
+    .app-header {
+      @apply ps-20;
+    }
+    &[data-toggled="double-menu-open"] {
+      .content {
+        @apply ms-[17rem];
+      }
+      .app-header {
+        @apply ps-[17rem];
+      }
+    }
+    &[data-toggled="double-menu-close"] {
+      .content {
+        @apply ms-20;
+      }
+      .header {
+        @apply ps-20;
+      }
+    }
+  }
+}
+/* End Double-Menu Styles */
