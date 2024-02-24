@@ -12,6 +12,8 @@
     "@googlemaps/js-api-loader": "^1.16.2",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
+    "@material-tailwind/react": "^2.1.9",
+    "@nextui-org/react": "^2.2.9",
     "@react-google-maps/api": "^2.19.3",
     "boxicons": "^2.1.4",
     "force": "^0.0.3",
@@ -21,8 +23,8 @@
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
-    "react-redux": "^9.1.0",
     "react-query": "^3.39.3",
+    "react-redux": "^9.1.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
   },
