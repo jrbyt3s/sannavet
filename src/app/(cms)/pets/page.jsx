@@ -10,7 +10,7 @@ function Page() {
       try {
         const response = await fetch('https://sannavet-api.onrender.com/pets/', {
           headers: {
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4ODEzMTgxLCJpYXQiOjE3MDg4MTEzODEsImp0aSI6ImZlMjk2MDVkNmE2ZjRmZTA4NmFlMDlkNzI2NmZmYzJjIiwidXNlcl9pZCI6NH0.YYSkO5lMQCvTshsQQ0F8Aqvn9dQsBf-F6H0QDZKgQMA',
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4ODE1MzI2LCJpYXQiOjE3MDg4MTM1MjYsImp0aSI6IjRmYjc5MDZjMzNjZTRlMjU4YjJjYWY4MTc5ZThlNTE2IiwidXNlcl9pZCI6NH0.CLFCb8eP6OsIAcerFaWEtY1bmSZE8COxIYKRUJTRV60',
             'Content-Type': 'application/json'
           }
         });
