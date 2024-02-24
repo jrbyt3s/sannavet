@@ -5,12 +5,12 @@ export default function CmsLayout({children
   return (
     
     <>
-    <div className="bg-neutral-100 h-screen w-screen overflow-hidden flex flex-row">
+    <div className="flex flex-row w-screen h-screen overflow-hidden bg-neutral-100">
 			<Sidebarr />
 			<div className="flex flex-col flex-1">
 				<Headercms />
-                <h2>hi Im Luis</h2>
-				<div className="flex-1 p-4 min-h-0 overflow-auto">
+                <h2></h2>
+				<div className="flex-1 min-h-0 p-4 overflow-auto">
 					{children}
 				</div>
 			</div>
