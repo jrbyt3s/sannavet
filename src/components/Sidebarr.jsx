@@ -34,6 +34,13 @@ const DASHBOARD_SIDEBAR_LINKS = [
 		path: '/pets',
 		icon: <HiOutlineDocumentText />
 	},
+	{
+		key: 'veterinario',
+		label: 'Veterinario',
+		path: '/veterinario',
+		icon: <HiOutlineDocumentText />
+	},
+	
 ]
 
 const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [

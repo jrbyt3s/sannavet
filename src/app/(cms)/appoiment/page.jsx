@@ -1,15 +1,15 @@
 import React from 'react'
 
 
-const Apoiment = () => {
+const Appoiment = () => {
     
     return (
 
         <>
-        <h1>Apoiment</h1>
+        <h1>Appoiment</h1>
         </>
 
     );
 }
 
-export default Apoiment;
+export default Appoiment;
