@@ -5,7 +5,7 @@ export default function CmsLayout({children
   return (
     
     <>
-    <div className="bg-neutral-100 h-screen w-screen overflow-hidden flex flex-row">
+    <div className="flex flex-row w-screen h-screen overflow-hidden bg-neutral-100">
 			<Sidebarr />
 			<div className="flex flex-col flex-1">
 				<Headercms />

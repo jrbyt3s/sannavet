@@ -54,7 +54,7 @@ const handleSignIn = async (e) => {
       console.log('registro exitoso')
       // Persistir los tokens en sessionStorage o localStorage
       sessionStorage.setItem('access_token', data.access_token);
-      localStorage.setItem('refresh_token', data.refresh_token);
+      localStorage.setItem('refresh_token', data.refresh_token);     
 
       
 
