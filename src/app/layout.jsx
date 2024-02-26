@@ -15,11 +15,13 @@ export const metadata = {
   title: "Sannavet veterinaria, hacemos que tu mascota mejore",
   description:
     "Veterinaria sannavet, vacunación de perros gatos, conejos, baños, se quitan pulgas y garrapatas, desparasitación de mascotas",
+  icons: {icon: '../../public/images/favicon.ico'}
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
+      
       <body className={montserrat.className}>
        
         {children}

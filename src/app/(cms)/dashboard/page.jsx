@@ -1,15 +1,10 @@
+'use client'
+
 import React from 'react'
 
-
-const Dasboard = () => {
-    
-    return (
-
-        <>
-        <h1>Dashboard</h1>
-        </>
-
-    );
+export default function Dasboard() {
+  return (
+    <div>Dasboard</div>
+  )
 }
 
-export default Dasboard;
