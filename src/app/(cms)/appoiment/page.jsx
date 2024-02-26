@@ -1,15 +1,8 @@
+'use client'
 import React from 'react'
 
-
-const Appoiment = () => {
-    
-    return (
-
-        <>
-        <h1>Appoiment</h1>
-        </>
-
-    );
+export default function Appoiment() {
+  return (
+    <div>Appoiment</div>
+  )
 }
-
-export default Appoiment;
