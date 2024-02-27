@@ -1,7 +1,7 @@
-import Appoiment from "../appoiment/appoiment";
+
 
 /* eslint-disable react/prop-types */
-const Pets = ({ data }) => {
+const PetsCard = ({ data }) => {
   return (
     <section className="py-8 bg-gray-100">
       <div className="container mx-auto">
@@ -26,7 +26,7 @@ const Pets = ({ data }) => {
             }) => (
               <div
                 key={id}
-                className="overflow-hidden bg-orange-500 rounded-lg shadow-md"
+                className="bg-white border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden"
               >
                 <div className="flex flex-col p-4">
                   <h3 className="mb-2 text-lg font-bold">Nombre: {nombre}</h3>
@@ -37,14 +37,14 @@ const Pets = ({ data }) => {
                     height={256}
                     className="object-cover w-full h-64 rounded-md"
                   />
-                  <p className="mb-2 text-gray-200 text-bold">Sexo: {sexo}</p>
-                  <p className="mb-4 text-gray-200 text-semibold">
+                  <p className="mb-2 text-gray-500 text-bold">Sexo: {sexo}</p>
+                  <p className="mb-4 text-gray-500 text-semibold">
                     Especie: {especie} 
                   </p>
-                  <p className="mb-4 text-gray-200 text-semibold">Raza: {raza}</p>
-                  <p className="mb-4 text-gray-200 text-semibold">Color: {color}</p>
-                  <p className="mb-4 text-gray-200 text-semibold">Esterilizado: {esterilizado}</p>
-                  <p className="mb-4 text-gray-200 text-semibold">Peso: {peso}</p>
+                  <p className="mb-4 text-gray-500 text-semibold">Raza: {raza}</p>
+                  <p className="mb-4 text-gray-500 text-semibold">Color: {color}</p>
+                  <p className="mb-4 text-gray-500 text-semibold">Esterilizado: {esterilizado}</p>
+                  <p className="mb-4 text-gray-500 text-semibold">Peso: {peso}</p>
                   <button className="justify-center px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
                     <a href="../appoiment">CITAS</a>
                   </button>
@@ -58,4 +58,4 @@ const Pets = ({ data }) => {
   );
 };
 
-export default Pets;
+export default PetsCard;

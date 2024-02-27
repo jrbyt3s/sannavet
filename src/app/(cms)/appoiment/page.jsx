@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import Appoiment from './appoiment';
+import AppoimentCard from './appoimentCard';
 
-function page() {
+export default function Appoiment() {
   const [data, setData] = useState([]);
   
   useEffect(() => {
@@ -22,10 +22,10 @@ function page() {
   return (
     <div>
       <ul>
-        <Appoiment data={data.results}/>
+        <AppoimentCard data={data.results}/>
       </ul>
     </div>
   );
 }
 
-export default page;
+

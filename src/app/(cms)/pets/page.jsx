@@ -1,16 +1,18 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import Pets from './pets';
+import PetsCard from './petsCard';
 
-function Page() {
+function Pets() {
   const [data, setData] = useState([]);
   
   useEffect(() => {
     const fetchData = async () => {
+      const access_token = sessionStorage.getItem('access_token');
+      console.log(`Bearer ${access_token}`); //Linea para ver si tienes el token (Borrar para Produccion)
       try {
         const response = await fetch('https://sannavet-api.onrender.com/pets/', {
           headers: {
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4ODI4Mzc3LCJpYXQiOjE3MDg4MjY1NzcsImp0aSI6ImQ4ZTdhZjZlMzA0ZjQ2ODA4NGJmNWUxMmY1MjhmOWI4IiwidXNlcl9pZCI6M30.tQLJvIJTjGRrCqQaHBYEcjkf7f76_ucUmbTGvF-KbwM',
+            'Authorization': `Bearer ${access_token}`,
             'Content-Type': 'application/json'
           }
         });
@@ -25,8 +27,7 @@ function Page() {
         console.error('Error:', error);
       }
     };
-    console.log('hola')
-    console.log(localStorage.getItem('access_token'))
+    
     
     fetchData();
 
@@ -35,12 +36,10 @@ function Page() {
   return (
     <div>
       <ul>
-        <Pets data={data.results}/>
+        <PetsCard data={data.results}/>
       </ul>
     </div>
   );
 }
 
-export default Page;
-
-/
+export default Pets;
