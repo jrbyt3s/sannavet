@@ -34,7 +34,7 @@ function About() {
           <p className="mt-2 mb-5 text-5xl font-bold text-gray-900 sm:text-4xl">
             Lo mejor para tu mascota
           </p>
-          <p className="text-sm text-gray-400 md:text-base">
+          <p className="mt-5 text-sm font-semibold text-gray-400 md:text-base">
             Nuestra clínica está equipada con instalaciones modernas y
             tecnología avanzada para garantizar el diagnóstico preciso y el
             tratamiento eficaz. Nos enorgullece ser un lugar donde tanto los

@@ -1,12 +1,12 @@
 import { HiCheck } from "react-icons/hi2";
 
 const includedFeatures = [
-  'diagnóstico',
+  'Diagnóstico',
   'Ecografia (no incluido en el precio)',
-  'rayos X (no iincluido en el precio)',
-  'atencion emergencias',
-  'checkeo de vacunas',
-  'desparasitación'
+  'Rayos X (no iincluido en el precio)',
+  'Atención de emergencias',
+  'Chequeo de vacunas',
+  'Desparasitación'
 ]
 
 export default function PriceSection() {
@@ -46,7 +46,7 @@ export default function PriceSection() {
               <div className="max-w-xs px-8 mx-auto">
                 <p className="text-base font-semibold text-gray-600">Precio de consulta Veterinaria</p>
                 <p className="flex items-baseline justify-center mt-6 gap-x-2">
-                  <span className="text-5xl font-bold tracking-tight text-gray-900">S/.30.0</span>
+                  <span className="text-5xl font-bold tracking-tight text-gray-900">S/.30.<sup>00</sup> </span>
                   <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">Soles</span>
                 </p>
                 <a
