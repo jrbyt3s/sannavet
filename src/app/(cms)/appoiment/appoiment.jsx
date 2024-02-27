@@ -19,22 +19,22 @@ const Appoiment = ({ data }) => {
             }) => (
               <div
                 key={id}
-                className="overflow-hidden bg-orange-500 rounded-lg shadow-md"
+                className="overflow-hidden bg-orange-400 rounded-lg shadow-md"
               >
                 <div className="relative p-4">
                   <h3 className="mb-2 text-lg font-bold">
                     Codigo de mascota: {pet_id}
                   </h3>
-                  <p className="mb-2 text-base text-gray-600">
+                  <p className="mb-2 text-semibold text-slate-50">
                     Codigo de veterinario: {veterinarian_id}
                   </p>
-                  <p className="mb-4 text-base text-gray-600">
+                  <p className="mb-4 text-semibold text-slate-50">
                     Fecha de la cita: {date}
                   </p>
-                  <p className="mb-4 text-base text-gray-600">
+                  <p className="mb-4 text-semibold text-slate-50">
                     Hora de la cita: {hour}
                   </p>
-                  <p className="mb-4 text-base text-gray-600">
+                  <p className="mb-4 text-semibold text-slate-50">
                     Descripcion: {description}
                   </p>
 

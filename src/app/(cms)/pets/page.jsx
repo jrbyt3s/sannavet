@@ -10,7 +10,7 @@ function Page() {
       try {
         const response = await fetch('https://sannavet-api.onrender.com/pets/', {
           headers: {
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4ODE1MzI2LCJpYXQiOjE3MDg4MTM1MjYsImp0aSI6IjRmYjc5MDZjMzNjZTRlMjU4YjJjYWY4MTc5ZThlNTE2IiwidXNlcl9pZCI6NH0.CLFCb8eP6OsIAcerFaWEtY1bmSZE8COxIYKRUJTRV60',
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4ODI4Mzc3LCJpYXQiOjE3MDg4MjY1NzcsImp0aSI6ImQ4ZTdhZjZlMzA0ZjQ2ODA4NGJmNWUxMmY1MjhmOWI4IiwidXNlcl9pZCI6M30.tQLJvIJTjGRrCqQaHBYEcjkf7f76_ucUmbTGvF-KbwM',
             'Content-Type': 'application/json'
           }
         });
@@ -25,7 +25,8 @@ function Page() {
         console.error('Error:', error);
       }
     };
-    print(localStorage.getItem('access_token'))
+    console.log('hola')
+    console.log(localStorage.getItem('access_token'))
     
     fetchData();
 
@@ -41,3 +42,5 @@ function Page() {
 }
 
 export default Page;
+
+/
