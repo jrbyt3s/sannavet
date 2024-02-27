@@ -48,13 +48,13 @@ const DASHBOARD_SIDEBAR_LINKS = [
 const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
 	{
 		key: 'settings',
-		label: 'Settings',
+		label: 'Configuracion',
 		path: '/settings',
 		icon: <HiOutlineCog />
 	},
 	{
 		key: 'support',
-		label: 'Help & Support',
+		label: 'Ayuda y Soporte',
 		path: '/support',
 		icon: <HiOutlineQuestionMarkCircle />
 	}
@@ -84,9 +84,7 @@ export default function Sidebarr() {
 						<Link classname="bg-black" href={sidebarItem.path}>
 							<div className={classNames(linkClass, " gap-0.5 text-neutral-200 text-lg hover:text-black")}>
 								<span>{sidebarItem.icon}</span>
-
 								{sidebarItem.label}
-
 							</div>
 						</Link>
 					))}
@@ -94,17 +92,14 @@ export default function Sidebarr() {
 				<div className="flex flex-col gap-0.5 pt-2 border-t border-neutral-700">
 					{DASHBOARD_SIDEBAR_BOTTOM_LINKS.map((menuIten) => (
 						// eslint-disable-next-line react/jsx-key
-						<ul className="flex flex-col md:flex-row md:items-center md:gap-[4vw] gap-2">
-
-							<li key={menuIten.key}>
-								<Link href='#'>{menuIten.label} </Link>
-							</li>
-						</ul>
+						<Link classname="bg-black" href='#'>
+						<div className={classNames(linkClass, " gap-0.5 text-neutral-200 text-lg hover:text-black")}>
+							<span>{menuIten.icon}</span>
+							{menuIten.label}
+						</div>
+					</Link>
 					))}
 					<div className={classNames(linkClass, 'cursor-pointer  text-white')}>
-						<span className="text-xl">
-
-						</span>
 						Salir
 					</div>
 				</div>
