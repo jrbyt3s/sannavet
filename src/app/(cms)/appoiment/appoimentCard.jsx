@@ -13,7 +13,7 @@ const AppoimentCard = ({ data }) => {
               <div className="flex p-4">
                 <img
                   className="object-cover w-24 h-24 mr-4 rounded-full"
-                  src="https://www.ospatudos.pt/wp-content/uploads/2017/09/patudos_apple144.png" // Reemplaza "URL_DE_LA_IMAGEN" con la URL de la imagen
+                  src="https://www.ospatudos.pt/wp-content/uploads/2017/09/patudos_apple144.png"
                   alt="Imagen de la cita"
                 />
                 <div>
