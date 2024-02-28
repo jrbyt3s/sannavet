@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         <div className="p-2">
           <ul>
-            <p className="text-white font-bold text-2xl pb-4">Servicios</p>
+            <p className="pb-4 text-2xl font-bold text-white">Servicios</p>
             <li className="text-gray-200 text-sm pb-1 font-semibold hover:text-[#082E52] cursor-pointer">
               Veterinaria
             </li>
@@ -74,20 +74,20 @@ const Footer = () => {
 
         <div className="p-2">
           <ul>
-            <p className="text-white font-bold text-2xl pb-4">Atencion</p>
+            <p className="pb-4 text-2xl font-bold text-white">Atencion</p>
             <li className="text-gray-200 text-sm pb-2 font-semibold hover:text-[#082E52] cursor-pointer">
               Citas
             </li>
             <li className="text-gray-200 text-sm pb-2 font-semibold hover:text-[#082E52] cursor-pointer">
-              Ubicanos
+              Ubícanos
             </li>
           </ul>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center text-center  p-5 bg-[#082E52]">
-        <h1 className="text-sm text-gray-200 font-semibold">
+        <h1 className="text-sm font-semibold text-gray-200">
           © 2023-2024 All rights reserved | Build with ❤ by{" "}
-          <span className="hover:text-orange-500 font-semibold cursor-pointer">
+          <span className="font-semibold cursor-pointer hover:text-orange-500">
             team Codigo Tepsup{" "}
           </span>
         </h1>

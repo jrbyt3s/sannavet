@@ -9,8 +9,8 @@ export default function CmsLayout({children
 			<Sidebarr />
 			<div className="flex flex-col flex-1">
 				<Headercms />
-               
-				<div className="flex-1 p-4 min-h-0 overflow-auto">
+                
+				<div className="flex-1 min-h-0 p-4 overflow-auto">
 					{children}
 				</div>
 			</div>

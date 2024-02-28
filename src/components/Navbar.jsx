@@ -57,7 +57,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link href="/ubicanos" className="hover:text-[#54AEF4]">
-                  Ubicanos
+                  Ubícanos
                 </Link>
               </li>
             </ul>
