@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
@@ -25,16 +24,16 @@ const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineViewGrid />
 	},
 	{
-		key: 'appoiment',
-		label: 'Citas',
-		path: '/appoiment',
-		icon: <HiOutlineDocumentText />
-	},
-	{
 		key: 'mascotas',
 		label: 'Mascotas',
 		path: '/pets',
 		icon: <MdOutlinePets />
+	},	
+	{
+		key: 'appoiment',
+		label: 'Citas',
+		path: '/appoiment',
+		icon: <HiOutlineDocumentText />
 	},
 	{
 		key: 'veterinario',
@@ -100,7 +99,7 @@ export default function Sidebarr() {
 					</Link>
 					))}
 					<div className={classNames(linkClass, 'cursor-pointer  text-white')}>
-						Salir
+						<Link href='/signout'>Salir</Link>
 					</div>
 				</div>
 			</aside>

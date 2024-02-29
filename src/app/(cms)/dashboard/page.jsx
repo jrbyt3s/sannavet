@@ -1,10 +1,36 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 export default function Dasboard() {
+
+  const [userProfile, setUserProfile] = useState(null);
+
+  useEffect(() => {
+    // Recuperar la información del perfil del localStorage
+    const storedProfile = localStorage.getItem('userProfile');
+
+    if (storedProfile) {
+      setUserProfile(JSON.parse(storedProfile));
+    }
+  }, []);
+
   return (
-    <div>Dashboard</div>
-  )
+    <div>
+      <h1>DASBOARD</h1>
+      {userProfile ? (
+        <ul>
+          <li>User ID: {userProfile.user_id}</li>
+          <li>Username: {userProfile.username}</li>
+          <li>Email: {userProfile.email}</li>
+          <li>First Name: {userProfile.first_name}</li>
+          <li>Last Name: {userProfile.last_name}</li>
+          <li>Role: {userProfile.role}</li>
+        </ul>
+      ) : (
+        <p>No user profile found</p>
+      )}
+    </div>
+  );
 }
 

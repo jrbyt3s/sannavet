@@ -4,6 +4,7 @@ import { FaUser, FaLock } from "react-icons/fa";
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'
+import Profile from "./profile";
 
 
 
@@ -54,10 +55,13 @@ const handleSignIn = async (e) => {
       console.log('registro exitoso')
       // Persistir los tokens en sessionStorage o localStorage
       sessionStorage.setItem('access_token', data.access_token);
-      localStorage.setItem('refresh_token', data.refresh_token);     
+      localStorage.setItem('refresh_token', data.refresh_token); 
+      //console.log(data.access_token);
+     Profile(data.access_token);
 
+      //fechin data client
       
-
+      
       // Redirigir a la página después del inicio de sesión exitoso
       router.push('/dashboard');
     } else {
@@ -66,6 +70,7 @@ const handleSignIn = async (e) => {
   } catch (error) {
     console.error('Error en la solicitud:', error);
   }
+  
 }; //fin de envío de formulario
 
 

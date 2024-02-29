@@ -3,6 +3,9 @@ import Link from "next/link"
 import Image from "next/image";
 
 export default function Component() {
+
+  //const userProfile = localStorage.getItem('userProfile');
+
   return (
     <header className="flex items-center h-20 px-4 border-b bg-white w-full shrink-0 dark:bg-orange-500 md:px-6">
       <div className="flex items-center mx-2">
