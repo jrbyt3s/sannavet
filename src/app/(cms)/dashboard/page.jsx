@@ -1,10 +1,13 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
+import {useSearchParams} from 'next/navigation'
 
 export default function Dasboard() {
 
   const [userProfile, setUserProfile] = useState(null);
+  const searchParam = useSearchParams();
+  console.log(searchParam.get("user_id"))
 
   useEffect(() => {
     // Recuperar la información del perfil del localStorage

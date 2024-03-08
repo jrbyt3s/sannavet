@@ -52,18 +52,20 @@ const handleSignIn = async (e) => {
 
     if (response.ok) {
       const data = await response.json();
+      
       console.log('registro exitoso')
       // Persistir los tokens en sessionStorage o localStorage
       sessionStorage.setItem('access_token', data.access_token);
       localStorage.setItem('refresh_token', data.refresh_token); 
       //console.log(data.access_token);
-     Profile(data.access_token);
-
-      //fechin data client
+    Profile(data.access_token).then((userProfile) =>{
+      router.push(`dashboard/?user_id=${userProfile.user_id}&first_name=${userProfile.first_name}&last_name=${userProfile.last_name}`)
+    })
+      
       
       
       // Redirigir a la página después del inicio de sesión exitoso
-      router.push('/dashboard');
+      
     } else {
       setAuthError('Error en las credenciales. Verifica tu nombre de usuario y contraseña.');
     }

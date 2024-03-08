@@ -16,6 +16,7 @@ export default async function Profile(access_token) {
                 last_name: user.last_name,
                 role: user.role
             }));
+            return user;
         try {
             if (user.user_id) {
                 const response2 = await fetch(`https://sannavet-api.onrender.com/clients/${user.user_id}/`, {
@@ -30,6 +31,7 @@ export default async function Profile(access_token) {
                     const responseData = await response2.json();
                     
                     console.log(responseData)
+                    return responseData
                 }
 
             }
