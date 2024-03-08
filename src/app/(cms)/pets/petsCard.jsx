@@ -24,8 +24,8 @@ const PetsCard = ({ data }) => {
                 <p className="mb-2 text-gray-500">Esterilizado: {esterilizado ? 'Sí' : 'No'}</p>
                 <p className="mb-2 text-gray-500">Peso: {peso} kg</p>
                 <div className="flex justify-center mt-4">
-                  <button className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
-                    <a href="../appoiment">CITAS</a>
+                  <button className="px-4 py-2 font-bold text-white bg-orange-500 rounded hover:bg-blue-500">
+                    <a href="../appoiment">Nueva Cita</a>
                   </button>
                 </div>
               </div>
