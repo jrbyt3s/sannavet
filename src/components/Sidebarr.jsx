@@ -25,8 +25,6 @@ const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineViewGrid />
 	},
 	{
-<<<<<<< HEAD
-=======
 		key: 'appoiment',
 		label: 'Citas',
 		path: '/appoiment',
@@ -38,7 +36,6 @@ const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineDocumentPlus />
 	},
 	{
->>>>>>> dev-josue
 		key: 'mascotas',
 		label: 'Mascotas',
 		path: '/pets',

@@ -12,18 +12,19 @@ function Dashboard() {
     if (storedProfile) {
       setUserProfile(JSON.parse(storedProfile));
     }
-    
+
     const fetchData = async () => {
       const access_token = sessionStorage.getItem('access_token');
+      console.log(userProfile.user_id);
       console.log(`Bearer ${access_token}`); //Linea para ver si tienes el token (Borrar para Produccion)
       try {
-        const response = await fetch('https://sannavet-api.onrender.com/clients/1/', {
+        const response = await fetch(`https://sannavet-api.onrender.com/clients/${userProfile.user_id}/`, {
           headers: {
             'Authorization': `Bearer ${access_token}`,
             'Content-Type': 'application/json'
           }
         });
-        
+
         if (!response.ok) {
           throw new Error('Error al obtener los datos');
         }
@@ -34,19 +35,36 @@ function Dashboard() {
         console.error('Error:', error);
       }
     };
-    
-    
+
+
     fetchData();
-    
+
 
   }, []);
 
   return (
-    <div>
-      <ul>
-        <PetsCard data={data.pets}/>
-      </ul>
-    </div>
+    <>
+      <div>
+        <h1>DASBOARD</h1>
+        {userProfile ? (
+          <ul>
+            <li>User ID: {userProfile.user_id}</li>
+            <li>Username: {userProfile.username}</li>
+            <li>Email: {userProfile.email}</li>
+            <li>First Name: {userProfile.first_name}</li>
+            <li>Last Name: {userProfile.last_name}</li>
+            <li>Role: {userProfile.role}</li>
+          </ul>
+        ) : (
+          <p>No user profile found</p>
+        )}
+      </div>
+      <div>
+        <ul>
+          <PetsCard data={data.pets} />
+        </ul>
+      </div>
+    </>
   );
 }
 
