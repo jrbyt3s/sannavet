@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FcBullish } from 'react-icons/fc';
 import { HiOutlineLogout } from 'react-icons/hi'
+import { HiOutlineDocumentPlus } from "react-icons/hi2";
 import classNames from 'classnames'
 import logoImage from "../../public/images/sannavet-logo-brand-removebg-resize.png";
 
@@ -29,6 +30,11 @@ const DASHBOARD_SIDEBAR_LINKS = [
 		label: 'Citas',
 		path: '/appoiment',
 		icon: <HiOutlineDocumentText />
+	},{
+		key: 'newAppoiment',
+		label: 'Nueva Cita',
+		path: '/newAppoiment',
+		icon: <HiOutlineDocumentPlus />
 	},
 	{
 		key: 'mascotas',
@@ -37,8 +43,8 @@ const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <MdOutlinePets />
 	},
 	{
-		key: 'veterinario',
-		label: 'Veterinario',
+		key: 'veterinarios',
+		label: 'Veterinarios',
 		path: '/veterinario',
 		icon: <RiStethoscopeFill />
 	},

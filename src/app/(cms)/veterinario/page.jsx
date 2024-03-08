@@ -27,31 +27,18 @@ const Veterinarios = () => {
 
     return (
         <>
-            <div className="md:flex block items-center justify-between my-[1.5rem] page-header-breadcrumb">
-                <div>
-                    <p className="font-semibold text-[1.125rem] text-defaulttextcolor dark:text-defaulttextcolor/70 !mb-0 ">Bienvenido amigo !</p>
-                    <p className="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem]">Listado de veterinarios.</p>
-                </div>
-                <div className="mt-2 btn-list md:mt-0">
-                    <button type="button"
-                        className="ti-btn bg-primary text-white btn-wave !font-medium !me-[0.375rem] !ms-0 !text-[0.85rem] !rounded-[0.35rem] !py-[0.51rem] !px-[0.86rem] mb-0 shadow-none">
-                        <i className="inline-block ri-filter-3-fill"></i>Filters
-                    </button>
-                    <button type="button"
-                        className="ti-btn ti-btn-outline-secondary btn-wave !font-medium  !me-[0.375rem]  !ms-0 !text-[0.85rem] !rounded-[0.35rem] !py-[0.51rem] !px-[0.86rem] mb-0 shadow-none">
-                        <i className="inline-block ri-upload-cloud-line"></i>Export
-                    </button>
-                </div>
-            </div>
+         <div className="md:flex block items-center justify-between my-[1.5rem] page-header-breadcrumb">
+      <div className="text-center">
+        <p className="font-semibold text-3xl dark:text-defaulttextcolor/70 mb-0 text-orange-500">Bienvenido!</p>
+        <p className="font-normal text-[#8c9097] dark:text-white/60 text-3xl">Lista de nuestro staff!</p>
+      </div>
+    </div>
             <div className="grid grid-cols-12 gap-x-6">
                 <div className="col-span-12 xxl:col-span-9 xl:col-span-12">
                     <div className="grid grid-cols-12 gap-x-6">
                         <div className="col-span-12 xxl:col-span-12 xl:col-span-12">
                             <div className="p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                 <div className="justify-between box-header">
-                                    <div className="my-2 box-title">
-                                        -------
-                                    </div>
                                     <div className="flex flex-wrap gap-2 my-4">
                                         <div>
                                             <input className="p-1 my-2 rounded-lg ti-form-control form-control-sm bg-slate-200 " type="text" placeholder="Search Here"
@@ -67,8 +54,9 @@ const Veterinarios = () => {
                                                     <th scope="row" className="!ps-4 !pe-5"><input className="form-check-input" type="checkbox"
                                                         id="checkboxNoLabel1" value="" aria-label="..." /></th>
                                                     <th scope="col" className="!text-start !text-[0.85rem] min-w-[200px]">Nombre</th>
-                                                    <th scope="col" className="!text-start !text-[0.85rem]">Categoria</th>
+                                                    <th scope="col" className="!text-start !text-[0.85rem]">Rol</th>
                                                     <th scope="col" className="!text-start !text-[0.85rem]">Correo</th>
+                                                    <th scope="col" className="!text-start !text-[0.85rem]">telefono</th>
                                                 </tr>
                                             </thead>
                                             <tbody>

@@ -4,9 +4,8 @@ import Image from "next/image";
 
 export default function Component() {
   return (
-    <header className="flex items-center h-20 px-4 border-b bg-white w-full shrink-0 dark:bg-orange-500 md:px-6">
+    <header className="flex items-center h-20 px-4 border-b bg-orange-500 w-full shrink-0 md:px-6">
       <div className="flex items-center mx-2">
-
       </div>
       <nav className="ml-auto flex-1">
         <div className="flex justify-end space-x-4">
