@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
+import AttentionCard from './attentionCard';
 
 function Attencions() {
   const searchparams = useSearchParams();
@@ -61,6 +62,7 @@ function Attencions() {
         <p>{JSON.stringify(data.attentions)}</p>
         
       </div>
+      <AttentionCard />
      
     </div>
   )
