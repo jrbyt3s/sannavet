@@ -15,11 +15,10 @@ function Dashboard() {
 
     const fetchData = async () => {
       const access_token = sessionStorage.getItem('access_token');
-      console.log(userProfile.user_id);
       console.log(`Bearer ${access_token}`); //Linea para ver si tienes el token (Borrar para Produccion)
       try {
-        const response = await fetch(`https://sannavet-api.onrender.com/clients/${userProfile.user_id}/`, {
-          headers: {
+        const response = await fetch('https://sannavet-api.onrender.com/clients/1/', {
+          headers: { 
             'Authorization': `Bearer ${access_token}`,
             'Content-Type': 'application/json'
           }
@@ -30,7 +29,7 @@ function Dashboard() {
         }
         const responseData = await response.json();
         setData(responseData);
-        console.log(responseData);
+       // console.log(responseData);
       } catch (error) {
         console.error('Error:', error);
       }

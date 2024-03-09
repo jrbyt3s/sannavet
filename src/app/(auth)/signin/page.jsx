@@ -6,12 +6,6 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation'
 import Profile from "./profile";
 
-
-
-
-
-
-
 const LoginForm = () => {
 
   //Creaando el estado local para almacenar los datos del formulario
